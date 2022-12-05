@@ -63,12 +63,6 @@ public class ATM extends JFrame {
         withdrawBut.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-<<<<<<< Updated upstream
-                taMain.setText(null);
-                money[0] = Integer.parseInt(tfUser.getText());
-                withdraw[0] = d.getBalance() - money[0];
-                taMain.append(String.valueOf(withdraw[0]));
-=======
                 if (tfUser== null){
                     JOptionPane.showMessageDialog(null, "No amount inputted, please input cash amount.");
                 } else {
@@ -77,7 +71,6 @@ public class ATM extends JFrame {
                     withdraw[0] = d.getBalance() - money[0];
                     taMain.append(String.valueOf(withdraw[0]));
                 }
->>>>>>> Stashed changes
                 //Code for the log
                 Logger logger = Logger.getLogger("Log");
                 FileHandler fh;
@@ -98,12 +91,6 @@ public class ATM extends JFrame {
         depositBut.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-<<<<<<< Updated upstream
-                taMain.setText(null);
-                money[0] = Integer.parseInt(tfUser.getText());
-                deposit[0] = d.getBalance() + money[0];
-                taMain.append(String.valueOf(deposit[0]));
-=======
                 if (tfUser== null){
                     JOptionPane.showMessageDialog(null, "No amount inputted, please input cash amount.");
                 } else {
@@ -112,7 +99,6 @@ public class ATM extends JFrame {
                     deposit[0] = d.getBalance() + money[0];
                     taMain.append(String.valueOf(deposit[0]));
                 }
->>>>>>> Stashed changes
                 //Code for the log
                 Logger logger = Logger.getLogger("Log");
                 FileHandler fh;

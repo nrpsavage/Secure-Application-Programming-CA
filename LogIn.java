@@ -36,7 +36,7 @@ public class LogIn extends JFrame {
         setVisible(true);
         //Code for the log
         try {
-            File myObj = new File("C:\\Users\\natha\\Desktop\\log.txt");
+            File myObj = new File("C:/Users/Public/Documents/LogFile.log");
             if (myObj.createNewFile()) {
                 System.out.println("File created: " + myObj.getName());
             } else {
